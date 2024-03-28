@@ -6,15 +6,15 @@ if not find_dotenv():
 else:
     load_dotenv()
 
-path_name = os.getenv('PATH_NAME')
-period = os.getenv('SYNCHRONIZATION_PERIOD')
-path_log = os.getenv('PATH_LOG')
-name_cloud = os.getenv('NAME_CLOUD')
+path_name = os.getenv("PATH_NAME")
+period = os.getenv("SYNCHRONIZATION_PERIOD")
+path_log = os.getenv("PATH_LOG")
+name_cloud = os.getenv("NAME_CLOUD")
 
 
-token = os.getenv('TOKEN')
+token = os.getenv("TOKEN")
 headers = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-    'Authorization': f'OAuth {token}',
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "Authorization": f"OAuth {token}",
 }
